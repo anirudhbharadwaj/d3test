@@ -1,0 +1,14 @@
+{
+  "name": "anirudh",
+  "homepage": "https://github.com/anirudhbharadwaj/d3test",
+  "authors": [
+    "Anirudh Bharadwaj <anibharadwaj007@gmail.com>"
+  ],
+  "description": "d3 test 1",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "jQuery": "^2.2.3",
+    "d3": "^3.5.16"
+  }
+}
