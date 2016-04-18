@@ -1,0 +1,69 @@
+<html>
+<head>
+  <!-- complete your HTML head here -->
+  <title>D3 Assignment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type = "text/javascript" src="D3_CSVRead.js"></script>
+
+    <meta charset="utf-8">
+	<style type="text/css">
+	body {
+  font: 11px sans-serif;
+}
+
+.axis path,
+            .axis line {
+                fill: none;
+                stroke: black;
+                shape-rendering: crispEdges;
+            }
+
+            .axis text {
+                font-family: sans-serif;
+                font-size: 11px;
+            }
+.dot {
+  stroke: #000;
+}
+.plot	{
+top:2%;
+left:10%;
+position:relative;
+}
+h4{
+top:2%;
+left:10%;
+position:relative;
+}
+.ui{
+top:2%;
+left:10%;
+position:relative;
+}
+
+	</style>
+</head>
+<body>
+<h4 id="hovered">Car Name</h4>
+<div class="plot">
+  <svg></svg>
+</div>
+<div class="ui">
+  <div>
+    <label>X-Axis</label>
+    <select name="sel-x" id="sel-x">
+    </select>
+    <label>Y-Axis</label>
+    <select id="sel-y">
+    </select>
+  </div>
+  <div>
+    <input id="mpg-min" type="text" placeholder="min MPG" size="10" onkeypress="return isNumberKey(event);">
+    <input id="mpg-max" type="text" placeholder="max MPG" size="10" onkeypress="return isNumberKey(event);">
+    <button id="update">Query MPG</button>
+  </div>
+</div>
+</body>
+</html>
+
